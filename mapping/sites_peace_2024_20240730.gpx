@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 3.5.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogr="http://osgeo.org/gdal" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata><bounds minlat="54.485632167842525" minlon="-122.989984554109469" maxlat="54.954937554789240" maxlon="-121.803063353279299"/></metadata>              
+<wpt lat="54.731056210880418" lon="-122.224130296425841">
+  <name>125231</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+<wpt lat="54.755980215328577" lon="-122.462359989648888">
+  <name>125261</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+<wpt lat="54.485632167842525" lon="-121.803063353279299">
+  <name>125000</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+<wpt lat="54.61806461839965" lon="-121.911202637053819">
+  <name>125179</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+<wpt lat="54.620060382339872" lon="-121.921106672801884">
+  <name>125180</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+<wpt lat="54.95493755478924" lon="-122.989984554109469">
+  <name>198667</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+<wpt lat="54.937294715640711" lon="-122.969239132170699">
+  <name>198668</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+<wpt lat="54.681056269003264" lon="-122.81799768128576">
+  <name>198692</name>
+  <desc>bt_rearing_km</desc>
+</wpt>
+</gpx>
