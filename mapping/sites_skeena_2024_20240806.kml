@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="sites_skeena_2024_20240806" id="sites_skeena_2024_20240806">
+	<SimpleField name="id" type="string"></SimpleField>
+	<SimpleField name="bt_network_km" type="float"></SimpleField>
+	<SimpleField name="bt_spawning_km" type="float"></SimpleField>
+	<SimpleField name="bt_rearing_km" type="float"></SimpleField>
+	<SimpleField name="utm_zone" type="int"></SimpleField>
+	<SimpleField name="utm_easting" type="int"></SimpleField>
+	<SimpleField name="utm_northing" type="int"></SimpleField>
+	<SimpleField name="mapsheet" type="string"></SimpleField>
+	<SimpleField name="watershed_group_code" type="string"></SimpleField>
+	<SimpleField name="pscis_assessment_comment" type="string"></SimpleField>
+	<SimpleField name="stream_name" type="string"></SimpleField>
+	<SimpleField name="observedspp_upstr" type="string"></SimpleField>
+	<SimpleField name="wsc_code" type="string"></SimpleField>
+	<SimpleField name="long" type="float"></SimpleField>
+	<SimpleField name="lat" type="float"></SimpleField>
+</Schema>
+<Folder><name>sites_skeena_2024_20240806</name>
+  <Placemark>
+	<name>123377</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">123377</SimpleData>
+		<SimpleData name="bt_network_km">44.1</SimpleData>
+		<SimpleData name="bt_spawning_km">7.3</SimpleData>
+		<SimpleData name="bt_rearing_km">12.3</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">641633</SimpleData>
+		<SimpleData name="utm_northing">6049398</SimpleData>
+		<SimpleData name="mapsheet">093L.113</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Debris is partially blocking one of the two pipes. Historic washouts on road at this site.  Landowner reports stream diverted downstream &amp;gt;50 years ago and crosses farmers field in ditched channel.  15:12</SimpleData>
+		<SimpleData name="stream_name">Thompson Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CT;DV;RB</SimpleData>
+		<SimpleData name="wsc_code">460-517700-00000-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-126.808973544138</SimpleData>
+		<SimpleData name="lat">54.5722250886153</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-126.808973544138,54.5722250886153,606.238473258132</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>123392</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">123392</SimpleData>
+		<SimpleData name="bt_network_km">76.8</SimpleData>
+		<SimpleData name="bt_spawning_km">8.1</SimpleData>
+		<SimpleData name="bt_rearing_km">17.5</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">638554</SimpleData>
+		<SimpleData name="utm_northing">6054801</SimpleData>
+		<SimpleData name="mapsheet">093L.118</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Embed larger CV if fish present</SimpleData>
+		<SimpleData name="stream_name">Lemieux Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CT;DV;RB;SU</SimpleData>
+		<SimpleData name="wsc_code">460-487900-11100-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-126.854005789544</SimpleData>
+		<SimpleData name="lat">54.621604699263</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-126.854005789544,54.621604699263,558.283673029918</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>123393</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">123393</SimpleData>
+		<SimpleData name="bt_network_km">76.9</SimpleData>
+		<SimpleData name="bt_spawning_km">8.2</SimpleData>
+		<SimpleData name="bt_rearing_km">17.6</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">638502</SimpleData>
+		<SimpleData name="utm_northing">6054711</SimpleData>
+		<SimpleData name="mapsheet">093L.118</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Embed larger CV if fish present</SimpleData>
+		<SimpleData name="stream_name">Lemieux Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CT;DV;LNC;NSC;RB;SU</SimpleData>
+		<SimpleData name="wsc_code">460-487900-11100-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-126.854858090279</SimpleData>
+		<SimpleData name="lat">54.6208122824272</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-126.854858090279,54.6208122824272,557.297838752232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>123426</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">123426</SimpleData>
+		<SimpleData name="bt_network_km">73.6</SimpleData>
+		<SimpleData name="bt_spawning_km">17.6</SimpleData>
+		<SimpleData name="bt_rearing_km">27.8</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">636935</SimpleData>
+		<SimpleData name="utm_northing">6056693</SimpleData>
+		<SimpleData name="mapsheet">093L.118</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Embed larger CV or install OBS if fish present - hole in CV inlet</SimpleData>
+		<SimpleData name="stream_name">Robin Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">BT;CT;RB;TR</SimpleData>
+		<SimpleData name="wsc_code">460-487900-00000-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-126.878185602701</SimpleData>
+		<SimpleData name="lat">54.6390336492477</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-126.878185602701,54.6390336492477,578.243773833973</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>124500</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">124500</SimpleData>
+		<SimpleData name="bt_network_km">47.8</SimpleData>
+		<SimpleData name="bt_spawning_km">8.8</SimpleData>
+		<SimpleData name="bt_rearing_km">15.6</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">627541</SimpleData>
+		<SimpleData name="utm_northing">6058702</SimpleData>
+		<SimpleData name="mapsheet">093L.118</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Wetland type habitat upstream with stream channel containing abundant gravels downstream.</SimpleData>
+		<SimpleData name="stream_name">Helps Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CT;DV;LNC;LSU;RB</SimpleData>
+		<SimpleData name="wsc_code">460-437000-00000-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-127.022770246755</SimpleData>
+		<SimpleData name="lat">54.6595399966394</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-127.022770246755,54.6595399966394,521.148936481359</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>197379</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">197379</SimpleData>
+		<SimpleData name="bt_network_km">0.8</SimpleData>
+		<SimpleData name="bt_spawning_km">0.1</SimpleData>
+		<SimpleData name="bt_rearing_km">0.8</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">640960</SimpleData>
+		<SimpleData name="utm_northing">6005930</SimpleData>
+		<SimpleData name="mapsheet">093L.103</SimpleData>
+		<SimpleData name="watershed_group_code">MORR</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Two thirds of culvert on upstream side has baffles. Fish sampling and PIT tagging conducted. Design underway by MoF. 13:18</SimpleData>
+		<SimpleData name="stream_name">Tributary to Owen Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CO;RB</SimpleData>
+		<SimpleData name="wsc_code">460-600600-23900-13000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-126.839973118346</SimpleData>
+		<SimpleData name="lat">54.1820295300472</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-126.839973118346,54.1820295300472,670.324741356433</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>197668</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">197668</SimpleData>
+		<SimpleData name="bt_network_km">65.2</SimpleData>
+		<SimpleData name="bt_spawning_km">12.1</SimpleData>
+		<SimpleData name="bt_rearing_km">23.2</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">634342</SimpleData>
+		<SimpleData name="utm_northing">6054605</SimpleData>
+		<SimpleData name="mapsheet">093L.118</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">CN crossing has had Newbury riffles constructed to decrease the size of the outlet drop but drop still present. Abundant gravels suitable for spawning chinook and coho present. Some deep pools available for fry/parr overwintering.</SimpleData>
+		<SimpleData name="stream_name">Coffin Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CSU;CT;DV;LSU;MW;RB;RSC</SimpleData>
+		<SimpleData name="wsc_code">460-472700-00000-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-126.919289309523</SimpleData>
+		<SimpleData name="lat">54.6209839306468</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-126.919289309523,54.6209839306468,530.337640060238</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>198217</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240806">
+		<SimpleData name="id">198217</SimpleData>
+		<SimpleData name="bt_network_km">6</SimpleData>
+		<SimpleData name="bt_spawning_km">0.2</SimpleData>
+		<SimpleData name="bt_rearing_km">0.5</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">582875</SimpleData>
+		<SimpleData name="utm_northing">6130541</SimpleData>
+		<SimpleData name="mapsheet">093M.106</SimpleData>
+		<SimpleData name="watershed_group_code">KISP</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Francis (chief) indicated this is historic coho harvest site for Glen Vowell community and historic coho spawning stream. 2 1.25m culverts side by side. Trash rack has been removed from inlet. Inlet has significant amount of debris. Extensive gravels present suitable for CO spawning upstream and downstream. Good flow and large stream. On road to water treatment plant. 12:20</SimpleData>
+		<SimpleData name="stream_name">Tributary to Skeena River</SimpleData>
+		<SimpleData name="long">-127.694177681179</SimpleData>
+		<SimpleData name="lat">55.3142740504756</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-127.694177681179,55.3142740504756,239.201224985379</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
