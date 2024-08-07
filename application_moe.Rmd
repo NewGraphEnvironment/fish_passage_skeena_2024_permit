@@ -30,8 +30,9 @@ Date: `r format(Sys.Date(), "%Y-%m-%d")`
 :::
 
 
-Ministry of Environment
-and Department of Fisheries and Oceans
+Ministry of Environment   
+and  
+Department of Fisheries and Oceans  
 
 
 
@@ -118,10 +119,9 @@ As we wish to tag all fish over 60mm in each site sampled we would like to apply
 
 <br>
 
-In general, species likely to be tagged include rainbow trout, bull trout, coho, and burbot. The numbers of fish per stream are likely to be much less than 150 however we are requesting the maximum number of fish to be tagged to allow for flexibility in the field. 
+In general, species likely to be tagged include rainbow trout, bull trout, and burbot. The numbers of fish per stream are likely to be much less than 150 however we are requesting the maximum number of fish to be tagged to allow for flexibility in the field. In 2023 the maximum number of fish tagged at one site was less than 100. 
 
-NEED TO UPDATE 
-In 2023 the maximum number of fish tagged at one site was less than 100 with a total of 2 burbot tagged.
+<!-- In 2023 max was 23 fish caught at one site -->
 
 ## Risks associated with project/activities and associated mitigation {-}
 
@@ -140,7 +140,7 @@ fpr::fpr_kable(impacts_mitigation, caption_text = 'Risks and mitigation', scroll
 <br>
 
 
-Please note that the sampling will be completed before October 31 (end of August till mid-September however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced [here at this link](https://newgraphenvironment.github.io/fish_passage_peace_2023_reporting/).
+Please note that the sampling will be completed before October 31 (end of August till mid-September however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced [here at this link](https://newgraphenvironment.github.io/fish_passage_skeena_2023_reporting/).
 
 <br>
 
@@ -213,8 +213,6 @@ wscodes <- fpr::fpr_db_query(
     .con = conn
   ) 
 )
-
-DBI::dbDisconnect(conn)  
 
 
 # make a table with the watershed codes, stream name, fish species
@@ -400,8 +398,9 @@ table_sites |>
 
 <br>
 
+NEED TO FIX:
 
-
+Table is on 3 different pages and has different sizes...
 
 ```{r tab-fish}
 tab_fish <- readr::read_csv('fig/fiss_species_table.csv')
