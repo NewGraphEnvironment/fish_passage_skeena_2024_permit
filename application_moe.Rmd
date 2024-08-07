@@ -215,6 +215,13 @@ wscodes <- fpr::fpr_db_query(
 )
 
 
+# Sites 198217 and 198216 are missing wsc_code due to mapping issue documented here https://github.com/NewGraphEnvironment/fish_passage_skeena_2024_permit/issues/2
+
+# We will use the watershed code from the upstream channel line from 1:50,000.
+wscodes <- wscodes |>
+  dplyr::mutate(wsc_code = case_when(stream_crossing_id == 198217 ~ '400-448500-00000-00000-0000-0000-000-000-000-000-000-000',  T ~ wsc_code))
+
+
 # make a table with the watershed codes, stream name, fish species
 table_sites <- left_join(
 
@@ -398,9 +405,6 @@ table_sites |>
 
 <br>
 
-NEED TO FIX:
-
-Table is on 3 different pages and has different sizes...
 
 ```{r tab-fish}
 tab_fish <- readr::read_csv('fig/fiss_species_table.csv')
