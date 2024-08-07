@@ -172,7 +172,20 @@ ids <- c(
   #  Lemieux Creek, backwatered. Big outlet pool but dewatering downstream.
   123392,
   #  Lemieux Creek, fully backwatered and very little flow through culvert. Huge outlet pool. Beaver activity.
-  123393
+  123393,
+  # Sandstone, lots of high value habitat upstream, outlet drop
+  8530,
+  # Trib to McDonell Lake, sockeye spawning point downstream near lake, outlet drop
+  8547,
+  # Gramaphone, revisit to monitor
+  58067,
+  # Waterfall creek, in Hazelton so good opportunity for community engagement. Good habitat.
+  198117,
+  198115,
+  # Chigaco Creek, potential for baffle installation
+  198906,
+  # Gershwin Creek, Skeena fisheries commission site with recommendation for installation of baffles, high value habitat. 
+  198916
   )
 
 # grab the crossings data 
