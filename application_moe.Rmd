@@ -30,7 +30,9 @@ Date: `r format(Sys.Date(), "%Y-%m-%d")`
 :::
 
 
-Ministry of Environment
+Ministry of Environment   
+and  
+Department of Fisheries and Oceans  
 
 
 
@@ -53,8 +55,8 @@ options(knitr.kable.NAN = '--')
 source('scripts/packages.R')
 source('scripts/staticimports.R')
 
-name_project <- 'peace_2024'
-name_repo <- 'fish_passage_peace_2024_permit'
+name_project <- 'skeena_2024'
+name_repo <- 'fish_passage_skeena_2024_permit'
 
 link_repo <- paste0('https://newgraphenvironment.github.io/', name_repo, '/')
 link_kml <- paste0('https://github.com/NewGraphEnvironment/', name_repo, '/raw/main/docs/sites_', name_project, '_', format(Sys.Date(), '%Y%m%d'), '_kml.zip')
@@ -78,12 +80,14 @@ This permit application can also be viewed online [at this link](`r knitr::asis_
 <br>
 
 ## Brief description of project/activities {-}
-This work is a multi-year collaboration of many groups and an initiative of the Society for Ecosystem Restoration Northern BC. Funding for the project is through the Fish and Wildlife Compensation Program and the Provincial Fish Passage Technical Working Group.  Al Irvine, R.P.Bio from New Graph Environment Ltd. is leading the fieldwork with field and office collaboration with teams from McLeod Lake Indian Band. Past reports are below:
+This work is a multi-year collaboration of many groups and an initiative of the Society for Ecosystem Restoration Northern BC. Funding for the project is through the Habitat Trust Conservation Foundation, Ministry of Transportation and Infrastructure and the Provincial Fish Passage Technical Working Group. Al Irvine, R.P.Bio from New Graph Environment Ltd. is leading the fieldwork with field and office collaboration with teams from the Office of Wet’suwet’en (contact Mike Ridsdale - mike.ridsdale@wetsuweten.com or Dave Dewit - david.dewit@wetsuweten.com), Gitskan Watershed Authorities (contact Alicia Fernando - afernando@gitksanwatershed.com ) and Gitsxan Environmental Services (contact Chaz Ware - chaz.ware@gitxsanbusiness.com ). Past reports are below:
 
-- https://newgraphenvironment.github.io/Parsnip_Fish_Passage/
-- https://newgraphenvironment.github.io/fish_passage_parsnip_2021_reporting/
-- https://newgraphenvironment.github.io/fish_passage_peace_2022_reporting/
-- https://newgraphenvironment.github.io/fish_passage_peace_2023_reporting/
+- https://www.newgraphenvironment.com/fish_passage_bulkley_2020_reporting/
+- https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/
+- https://www.newgraphenvironment.com/fish_passage_bulkley_2022_reporting/
+- https://www.newgraphenvironment.com/fish_passage_skeena_2022_reporting/
+- https://www.newgraphenvironment.com/fish_passage_skeena_2023_reporting/
+
 
 
 ## Rationale {-}
@@ -93,15 +97,16 @@ Rationale for sampling is to inform fish presence/absence, species composition/d
 <br>
 
 ## Methodologies {-}
+
 Sampling is proposed at streams included in Tables \@ref(tab:tab-sites1) - \@ref(tab:tab-sites3) where we will be performing habitat confirmations and follow up site visits related to past habitat confirmations/fish passage remediations.  
 
 <br>
 
 
-
 Sampling methodologies will be dependent on the site, fish species suspected, type of habitat encountered, risks to aquatic organisms potentially present and ongoing communications.  Sampling methods may include minnowtrapping, electrofishing, and dipnetting upstream and downstream of current and past barrier culvert locations. 
 
 ### PIT Tagging {-}
+
 As part of this permit application we are proposing tagging.  Our study plan is (when time allows and PIT tagging is expected to increase our state of knowledge about the subject system) to electrofish small sites both upstream and downstream of priority culvert "barrier" sites and insert biomark APT12 PIT tags into the body cavity of select fish captured over 60mm.  Fish location (UTM), length and weight will also be collected.  In addition to providing information on abundance upstream and downstream of potential culvert restoration sites, the study will also provide information for monitoring programs to document fish movement, growth and survival at sites over multi-year timeframes. Main objectives are to determine
 
 1. if fish are moving into restored areas 
@@ -114,7 +119,9 @@ As we wish to tag all fish over 60mm in each site sampled we would like to apply
 
 <br>
 
-In general, species likely to be tagged include rainbow trout, bull trout and burbot. The numbers of fish per stream are likely to be much less than 150 however we are requesting the maximum number of fish to be tagged to allow for flexibility in the field. In 2023 the maximum number of fish tagged at one site was less than 100 with a total of 2 burbot tagged.
+In general, species likely to be tagged include rainbow trout, bull trout, and burbot. The numbers of fish per stream are likely to be much less than 150 however we are requesting the maximum number of fish to be tagged to allow for flexibility in the field. In 2023 the maximum number of fish tagged at one site was less than 100. 
+
+<!-- In 2023 max was 23 fish caught at one site -->
 
 ## Risks associated with project/activities and associated mitigation {-}
 
@@ -133,7 +140,7 @@ fpr::fpr_kable(impacts_mitigation, caption_text = 'Risks and mitigation', scroll
 <br>
 
 
-Please note that the sampling will be completed before October 31 (end of August till mid-September however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced [here at this link](https://newgraphenvironment.github.io/fish_passage_peace_2023_reporting/).
+Please note that the sampling will be completed before October 31 (end of August till mid-September however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced [here at this link](https://newgraphenvironment.github.io/fish_passage_skeena_2023_reporting/).
 
 <br>
 
@@ -141,7 +148,7 @@ Please do not hesitate to contact me if you need more information or have any qu
 
 
 
-![signature](/Users/airvine/Library/CloudStorage/OneDrive-Personal/Admin/Al_Sig.jpg){width=50%}  
+<!-- ![signature](/Users/airvine/Library/CloudStorage/OneDrive-Personal/Admin/Al_Sig.jpg){width=50%}   -->
 Al Irvine, R.P.Bio 
 
 ```{r pull-db}
@@ -150,24 +157,35 @@ conn <- fpr::fpr_db_conn()
 ##pull out what we need from the database
 
 ids <- c(
-  #arctic
-  125000, 
-  #fern
-  125261, 
-  # table 21k
-  125231,
-  #missinka remediated
-  125179,
-  ##missinka reference
-  125180,
-  ##trib to Kerry Lake where BCTS is deactivating.  Good flow
-  198692,
-  ##trib to McLeod with large outlet, ok flow and decent looking habitat. On reserve and close to community
-  198668,
-  ##trib to McLeod Lake right at the store and walking distance from community.  
-  ## good site for sampling to get people interested
-  #large outlet drop, ok flow and decent looking habitat. On reserve
-  198667
+  # Thompson Creek
+  123377, 
+  # Glen Vowell, huge outlet drop
+  198217, 
+  # Helps
+  124500,
+  # Coffin, 4km of good habitat upstream. Work done at crossing but didn't help much. 
+  197668,
+  # Alvin, part of Bii Wenii Kwa restoration area, coho caught in 2022 but dry in 2023
+  197379,
+  # Robin Creek, embedded culvert with high flow
+  123426,
+  #  Lemieux Creek, backwatered. Big outlet pool but dewatering downstream.
+  123392,
+  #  Lemieux Creek, fully backwatered and very little flow through culvert. Huge outlet pool. Beaver activity.
+  123393,
+  # Sandstone, lots of high value habitat upstream, outlet drop
+  8530,
+  # Trib to McDonell Lake, sockeye spawning point downstream near lake, outlet drop
+  8547,
+  # Gramaphone, revisit to monitor
+  58067,
+  # Waterfall creek, in Hazelton so good opportunity for community engagement. Good habitat.
+  198117,
+  198115,
+  # Chigaco Creek, potential for baffle installation
+  198906,
+  # Gershwin Creek, Skeena fisheries commission site with recommendation for installation of baffles, high value habitat. 
+  198916
   )
 
 # grab the crossings data 
@@ -209,7 +227,12 @@ wscodes <- fpr::fpr_db_query(
   ) 
 )
 
-DBI::dbDisconnect(conn)  
+
+# Sites 198217 and 198216 are missing wsc_code due to mapping issue documented here https://github.com/NewGraphEnvironment/fish_passage_skeena_2024_permit/issues/2
+
+# We will use the watershed code from the upstream channel line from 1:50,000.
+wscodes <- wscodes |>
+  dplyr::mutate(wsc_code = case_when(stream_crossing_id == 198217 ~ '400-448500-00000-00000-0000-0000-000-000-000-000-000-000',  T ~ wsc_code))
 
 
 # make a table with the watershed codes, stream name, fish species
@@ -396,14 +419,10 @@ table_sites |>
 <br>
 
 
-
-
 ```{r tab-fish}
-tab_fish <- readr::read_csv(paste0(getwd(), '/fig/fiss_species_table.csv'))
+tab_fish <- readr::read_csv('fig/fiss_species_table.csv')
 
 tab_fish |> 
-  filter(Parsnip == 'Yes') |> 
-  select(`Scientific Name`:`SARA`) |> 
   fpr::fpr_kable(caption_text = 'Fish species recorded within subject streams in the Fisheries Information Summary System.', scroll = FALSE)
 
 
