@@ -30,9 +30,9 @@ Date: `r format(Sys.Date(), "%Y-%m-%d")`
 :::
 
 
-Ministry of Environment   
+Ministry of Water, Land and Resource Stewardship  
 and  
-Department of Fisheries and Oceans  
+Fisheries and Oceans Canada
 
 
 
@@ -80,7 +80,7 @@ This permit application can also be viewed online [at this link](`r knitr::asis_
 <br>
 
 ## Brief description of project/activities {-}
-This work is a multi-year collaboration of many groups and an initiative of the Society for Ecosystem Restoration Northern BC. Funding for the project is through the Habitat Trust Conservation Foundation, Ministry of Transportation and Infrastructure and the Provincial Fish Passage Technical Working Group. Al Irvine, R.P.Bio from New Graph Environment Ltd. is leading the fieldwork with field and office collaboration with teams from the Office of Wet’suwet’en (contact Mike Ridsdale - mike.ridsdale@wetsuweten.com or Dave Dewit - david.dewit@wetsuweten.com), Gitskan Watershed Authorities (contact Alicia Fernando - afernando@gitksanwatershed.com ) and Gitsxan Environmental Services (contact Chaz Ware - chaz.ware@gitxsanbusiness.com ). Past reports are below:
+This work is a multi-year collaboration of many groups and an initiative of the Society for Ecosystem Restoration Northern BC. Funding for the project is through the Habitat Trust Conservation Foundation, Ministry of Transportation and Infrastructure and the Provincial Fish Passage Technical Working Group. Al Irvine, R.P.Bio from New Graph Environment Ltd. is leading the fieldwork with field and office collaboration with teams from the Office of Wet’suwet’en (contact Julia Onderwater - Julia.Onderwater@wetsuweten.com or Dave Dewit - david.dewit@wetsuweten.com), Gitskan Watershed Authorities (contact Alicia Fernando - afernando@gitksanwatershed.com ) and Gitsxan Environmental Services (contact Chaz Ware - chaz.ware@gitxsanbusiness.com ). Past reports are below:
 
 - https://www.newgraphenvironment.com/fish_passage_bulkley_2020_reporting/
 - https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/
@@ -140,7 +140,7 @@ fpr::fpr_kable(impacts_mitigation, caption_text = 'Risks and mitigation', scroll
 <br>
 
 
-Please note that the sampling will be completed before October 31 (end of August till mid-September however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced [here at this link](https://newgraphenvironment.github.io/fish_passage_skeena_2023_reporting/).
+Please note that the sampling will be completed before October 31 (end of August till mid-September however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced in reports above.
 
 <br>
 
@@ -159,7 +159,7 @@ conn <- fpr::fpr_db_conn()
 ids <- c(
   # Thompson Creek
   123377, 
-  # Glen Vowell, huge outlet drop
+  # Glen Vowell, replaced
   198217, 
   # Helps
   124500,
@@ -169,8 +169,6 @@ ids <- c(
   197379,
   # Robin Creek, embedded culvert with high flow
   123426,
-  #  Lemieux Creek, backwatered. Big outlet pool but dewatering downstream.
-  123392,
   #  Lemieux Creek, fully backwatered and very little flow through culvert. Huge outlet pool. Beaver activity.
   123393,
   # Sandstone, lots of high value habitat upstream, outlet drop
@@ -180,12 +178,13 @@ ids <- c(
   # Gramaphone, revisit to monitor
   58067,
   # Waterfall creek, in Hazelton so good opportunity for community engagement. Good habitat.
-  198117,
-  198115,
-  # Chigaco Creek, potential for baffle installation
-  198906,
+  124422,
   # Gershwin Creek, Skeena fisheries commission site with recommendation for installation of baffles, high value habitat. 
-  198916
+  198916,
+# trib to Stock taht drains Barrett Lake
+  195934,
+#Kathlyn Creek
+  58242
   )
 
 # grab the crossings data 
@@ -260,14 +259,14 @@ table_sites <- left_join(
   by = 'id'
 ) |>  
   dplyr::mutate(dplyr::across(dplyr::starts_with('bt_'), ~round(., 1))) |> 
-  arrange(id) |>  
   mutate(stream_name = case_when(
     is.na(stream_name) ~ gnis_stream_name,
     T ~ stream_name
   )) |> 
   select(-gnis_stream_name) |> 
   sf::st_transform(crs = 4326) |> 
-  fpr::fpr_sp_assign_latlong(col_lon = "long") 
+  fpr::fpr_sp_assign_latlong(col_lon = "long") |> 
+  arrange(id)
 
 ```
 
@@ -306,7 +305,8 @@ zip::zipr(paste0("docs/sites_", name_project, '_', format(Sys.Date(), "%Y%m%d"),
 
 ```
 
-`r if(gitbook_on){knitr::asis_output("<br>")} else knitr::asis_output("<br><br><br><br><br><br><br>")`
+
+<div class="page-break"></div>
 
 
 
@@ -356,7 +356,8 @@ mymap <- ggmap::ggmap(mybasemap) +
 mymap
 ```
 
-<!-- `r if(gitbook_on){knitr::asis_output("<br>")} else knitr::asis_output("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>")` -->
+<div class="page-break"></div>
+
 
 
 ```{r tab-sites1, eval = T}
@@ -384,7 +385,8 @@ table_sites |>
   # kableExtra::column_spec(column = c(7), width_max = '2.0in')
 ```
 
-<br>
+
+<div class="page-break"></div>
 
 
 ```{r tab-sites3, eval = T}
@@ -423,7 +425,9 @@ table_sites |>
 tab_fish <- readr::read_csv('fig/fiss_species_table.csv')
 
 tab_fish |> 
-  fpr::fpr_kable(caption_text = 'Fish species recorded within subject streams in the Fisheries Information Summary System.', scroll = FALSE)
+  # remove KLUM
+  dplyr::select(-Kalum) |>
+  fpr::fpr_kable(caption_text = 'Fish species recorded within subject streams in the Fisheries Information Summary System.', scroll = FALSE, font_size = 8)
 
 
 ```

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
-<Schema name="sites_skeena_2024_20240807" id="sites_skeena_2024_20240807">
+<Schema name="sites_skeena_2024_20240809" id="sites_skeena_2024_20240809">
 	<SimpleField name="id" type="string"></SimpleField>
 	<SimpleField name="bt_network_km" type="float"></SimpleField>
 	<SimpleField name="bt_spawning_km" type="float"></SimpleField>
@@ -18,10 +18,10 @@
 	<SimpleField name="long" type="float"></SimpleField>
 	<SimpleField name="lat" type="float"></SimpleField>
 </Schema>
-<Folder><name>sites_skeena_2024_20240807</name>
+<Folder><name>sites_skeena_2024_20240809</name>
   <Placemark>
 	<name>123377</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">123377</SimpleData>
 		<SimpleData name="bt_network_km">44.1</SimpleData>
 		<SimpleData name="bt_spawning_km">7.3</SimpleData>
@@ -41,29 +41,8 @@
       <Point><coordinates>-126.808973544138,54.5722250886153,606.238473258132</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>123392</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
-		<SimpleData name="id">123392</SimpleData>
-		<SimpleData name="bt_network_km">76.8</SimpleData>
-		<SimpleData name="bt_spawning_km">8.1</SimpleData>
-		<SimpleData name="bt_rearing_km">17.5</SimpleData>
-		<SimpleData name="utm_zone">9</SimpleData>
-		<SimpleData name="utm_easting">638554</SimpleData>
-		<SimpleData name="utm_northing">6054801</SimpleData>
-		<SimpleData name="mapsheet">093L.118</SimpleData>
-		<SimpleData name="watershed_group_code">BULK</SimpleData>
-		<SimpleData name="pscis_assessment_comment">Embed larger CV if fish present</SimpleData>
-		<SimpleData name="stream_name">Lemieux Creek</SimpleData>
-		<SimpleData name="observedspp_upstr">CT;DV;RB;SU</SimpleData>
-		<SimpleData name="wsc_code">460-487900-11100-00000-0000-0000-000-000-000-000-000-000</SimpleData>
-		<SimpleData name="long">-126.854005789544</SimpleData>
-		<SimpleData name="lat">54.621604699263</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-126.854005789544,54.621604699263,558.283673029918</coordinates></Point>
-  </Placemark>
-  <Placemark>
 	<name>123393</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">123393</SimpleData>
 		<SimpleData name="bt_network_km">76.9</SimpleData>
 		<SimpleData name="bt_spawning_km">8.2</SimpleData>
@@ -84,7 +63,7 @@
   </Placemark>
   <Placemark>
 	<name>123426</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">123426</SimpleData>
 		<SimpleData name="bt_network_km">73.6</SimpleData>
 		<SimpleData name="bt_spawning_km">17.6</SimpleData>
@@ -104,8 +83,29 @@
       <Point><coordinates>-126.878185602701,54.6390336492477,578.243773833973</coordinates></Point>
   </Placemark>
   <Placemark>
+	<name>124422</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
+		<SimpleData name="id">124422</SimpleData>
+		<SimpleData name="bt_network_km">1.2</SimpleData>
+		<SimpleData name="bt_spawning_km">1.2</SimpleData>
+		<SimpleData name="bt_rearing_km">1.2</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">589500</SimpleData>
+		<SimpleData name="utm_northing">6123161</SimpleData>
+		<SimpleData name="mapsheet">093M.107</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">2 pipes. Both have water, left bank one is flowing.  Assessment comments indicate right bank pipe is backwatered 100% but changed to 25% based on photos and past PSCIS data and photos which also indicated not backwatered. Suspect blockage due to debris. Outlet water depth, fish sighted in outlet of right barrel. 13:42</SimpleData>
+		<SimpleData name="stream_name">Tributary to Waterfall Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CO;DV</SimpleData>
+		<SimpleData name="wsc_code">460-007300-39470-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-127.592177127641</SimpleData>
+		<SimpleData name="lat">55.2468135910941</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-127.592177127641,55.2468135910941,316</coordinates></Point>
+  </Placemark>
+  <Placemark>
 	<name>124500</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">124500</SimpleData>
 		<SimpleData name="bt_network_km">47.8</SimpleData>
 		<SimpleData name="bt_spawning_km">8.8</SimpleData>
@@ -125,8 +125,29 @@
       <Point><coordinates>-127.022770246755,54.6595399966394,521.148936481359</coordinates></Point>
   </Placemark>
   <Placemark>
+	<name>195934</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
+		<SimpleData name="id">195934</SimpleData>
+		<SimpleData name="bt_network_km">16.4</SimpleData>
+		<SimpleData name="bt_spawning_km">1</SimpleData>
+		<SimpleData name="bt_rearing_km">4.3</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">645134</SimpleData>
+		<SimpleData name="utm_northing">6034600</SimpleData>
+		<SimpleData name="mapsheet">093L.114</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">Currently 2 CVs, no access at low water</SimpleData>
+		<SimpleData name="stream_name">Stock Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">CT;KO;LSU;RB</SimpleData>
+		<SimpleData name="wsc_code">460-589500-30000-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-126.762135297948</SimpleData>
+		<SimpleData name="lat">54.438346661024</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-126.762135297948,54.438346661024,613.36623783589</coordinates></Point>
+  </Placemark>
+  <Placemark>
 	<name>197379</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">197379</SimpleData>
 		<SimpleData name="bt_network_km">0.8</SimpleData>
 		<SimpleData name="bt_spawning_km">0.1</SimpleData>
@@ -147,7 +168,7 @@
   </Placemark>
   <Placemark>
 	<name>197668</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">197668</SimpleData>
 		<SimpleData name="bt_network_km">65.2</SimpleData>
 		<SimpleData name="bt_spawning_km">12.1</SimpleData>
@@ -168,7 +189,7 @@
   </Placemark>
   <Placemark>
 	<name>198217</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">198217</SimpleData>
 		<SimpleData name="bt_network_km">6</SimpleData>
 		<SimpleData name="bt_spawning_km">0.2</SimpleData>
@@ -187,29 +208,8 @@
       <Point><coordinates>-127.694177681179,55.3142740504756,239.201224985379</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>198906</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
-		<SimpleData name="id">198906</SimpleData>
-		<SimpleData name="bt_network_km">1.8</SimpleData>
-		<SimpleData name="bt_spawning_km">0.6</SimpleData>
-		<SimpleData name="bt_rearing_km">1.2</SimpleData>
-		<SimpleData name="utm_zone">9</SimpleData>
-		<SimpleData name="utm_easting">585120</SimpleData>
-		<SimpleData name="utm_northing">6119108</SimpleData>
-		<SimpleData name="mapsheet">093M.106</SimpleData>
-		<SimpleData name="watershed_group_code">KISP</SimpleData>
-		<SimpleData name="pscis_assessment_comment">Small rapids near inlet creating small drop. Appears to be high stream velocity in culvert, installing baffles could be an option. Wide stream with high flow, gravels present upstream. Ministry of Transportation chris_culvert_id: 1522582. 10:42:03</SimpleData>
-		<SimpleData name="stream_name">Chicago Creek</SimpleData>
-		<SimpleData name="observedspp_upstr">CT;DV</SimpleData>
-		<SimpleData name="wsc_code">400-425900-00000-00000-0000-0000-000-000-000-000-000-000</SimpleData>
-		<SimpleData name="long">-127.662265780402</SimpleData>
-		<SimpleData name="lat">55.2111832323862</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-127.662265780402,55.2111832323862,296.895100842401</coordinates></Point>
-  </Placemark>
-  <Placemark>
 	<name>198916</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">198916</SimpleData>
 		<SimpleData name="bt_network_km">16.9</SimpleData>
 		<SimpleData name="bt_spawning_km">3.6</SimpleData>
@@ -230,7 +230,7 @@
   </Placemark>
   <Placemark>
 	<name>58067</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">58067</SimpleData>
 		<SimpleData name="bt_network_km">45.4</SimpleData>
 		<SimpleData name="bt_spawning_km">4.7</SimpleData>
@@ -250,8 +250,29 @@
       <Point><coordinates>-127.28584471977,54.9708685698256,453.999267718184</coordinates></Point>
   </Placemark>
   <Placemark>
+	<name>58242</name>
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
+		<SimpleData name="id">58242</SimpleData>
+		<SimpleData name="bt_network_km">42.1</SimpleData>
+		<SimpleData name="bt_spawning_km">13.4</SimpleData>
+		<SimpleData name="bt_rearing_km">19.2</SimpleData>
+		<SimpleData name="utm_zone">9</SimpleData>
+		<SimpleData name="utm_easting">616947</SimpleData>
+		<SimpleData name="utm_northing">6073197</SimpleData>
+		<SimpleData name="mapsheet">093L.118</SimpleData>
+		<SimpleData name="watershed_group_code">BULK</SimpleData>
+		<SimpleData name="pscis_assessment_comment">If culvert is proven to be a barrier, install OBS</SimpleData>
+		<SimpleData name="stream_name">Kathlyn Creek</SimpleData>
+		<SimpleData name="observedspp_upstr">BB;CAS;CC;CO;CT;DV;L;LNC;LSU;MW;NSC;OS;PCC;PK;RB;RSC;SA;ST;SU;WF;WSU</SimpleData>
+		<SimpleData name="wsc_code">460-345400-00000-00000-0000-0000-000-000-000-000-000-000</SimpleData>
+		<SimpleData name="long">-127.181079431312</SimpleData>
+		<SimpleData name="lat">54.7923057944851</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-127.181079431312,54.7923057944851,478.342281543385</coordinates></Point>
+  </Placemark>
+  <Placemark>
 	<name>8530</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">8530</SimpleData>
 		<SimpleData name="bt_network_km">24.3</SimpleData>
 		<SimpleData name="bt_spawning_km">3.2</SimpleData>
@@ -272,7 +293,7 @@
   </Placemark>
   <Placemark>
 	<name>8547</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240807">
+	<ExtendedData><SchemaData schemaUrl="#sites_skeena_2024_20240809">
 		<SimpleData name="id">8547</SimpleData>
 		<SimpleData name="bt_network_km">4.8</SimpleData>
 		<SimpleData name="bt_spawning_km">0</SimpleData>
