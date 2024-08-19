@@ -26,7 +26,8 @@ Al Irvine
 New Graph Environment Ltd.  
 al@newgraphenvironment   
 250-777-1518  
-Date: `r format(Sys.Date(), "%Y-%m-%d")` 
+Date Original: 2024-08-09  
+Date Revised: `r format(Sys.Date(), "%Y-%m-%d")` 
 :::
 
 
@@ -38,7 +39,7 @@ Fisheries and Oceans Canada
 
 <br>
 
-**Re: Fish Permit Application**
+**Re: Scientific Fish Collection Permit Application**
 
 <br>
 
@@ -60,6 +61,11 @@ name_repo <- 'fish_passage_skeena_2024_permit'
 
 link_repo <- paste0('https://newgraphenvironment.github.io/', name_repo, '/')
 link_kml <- paste0('https://github.com/NewGraphEnvironment/', name_repo, '/raw/main/docs/sites_', name_project, '_', format(Sys.Date(), '%Y%m%d'), '_kml.zip')
+
+# detail the fish likley to be tagged since we include so many. Varies from region to region and can be determined from
+# past data (if this is a multi-year project)
+fish_tags <- c('rainbow trout', 'cutthrout trout', 'dolly varden')
+
 ```
 
 ```{r settings-gitbook, eval= gitbook_on}
@@ -73,11 +79,13 @@ photo_width <- "80%"
 font_set <- 8
 ```
 
-
-
-This permit application can also be viewed online [at this link](`r knitr::asis_output(link_repo)`).  A summary of sites to be potentially assessed is included as Tables \@ref(tab:tab-sites1) - \@ref(tab:tab-sites3),  details of fish species potentially encountered is presented in  Table \@ref(tab:tab-fish) and an overview map displaying potential sample locations is included as Figure 1. A kml file of the sites is included as an attachment to the application and can also be downloaded [from here at this link](`r knitr::asis_output(link_kml)`).  Please note that there is an extensive amount of information contained in the kml file (accessed by clicking on sites) including brief summaries of background reporting data (when available).
+Please not that permitting to Fisheries and Oceans Canada is requested for inventory purposes only.  PIT tagging is not 
+proposed for salmon species. PIT tagging has been proposed to the Provincial Ministry of Water, Land and Resource Stewardship (WLRS) for provincial jurisdiction species only to monitor fish movement and growth over multiple years.
 
 <br>
+
+This permit application can also be viewed online [at this link](`r knitr::asis_output(link_repo)`).  A summary of sites to be potentially assessed is included as Tables \@ref(tab:tab-sites1) - \@ref(tab:tab-sites3),  details of fish species potentially encountered is presented in  Table \@ref(tab:tab-fish) and an overview map displaying potential sample locations is included as Figure 1. A kml file of the sites is included as an attachment to the application and can also be downloaded [from here at this link](`r knitr::asis_output(link_kml)`).  There is an extensive amount of information contained in the kml file (accessed by clicking on sites) including brief summaries of background reporting data (when available).
+
 
 ## Brief description of project/activities {-}
 This work is a multi-year collaboration of many groups and an initiative of the Society for Ecosystem Restoration Northern BC. Funding for the project is through the Habitat Trust Conservation Foundation, Ministry of Transportation and Infrastructure and the Provincial Fish Passage Technical Working Group. Al Irvine, R.P.Bio from New Graph Environment Ltd. is leading the fieldwork with field and office collaboration with teams from the Office of Wet’suwet’en (contact Julia Onderwater - Julia.Onderwater@wetsuweten.com or Dave Dewit - david.dewit@wetsuweten.com), Gitskan Watershed Authorities (contact Alicia Fernando - afernando@gitksanwatershed.com ) and Gitsxan Environmental Services (contact Chaz Ware - chaz.ware@gitxsanbusiness.com ). Past reports are below:
@@ -92,22 +100,23 @@ This work is a multi-year collaboration of many groups and an initiative of the 
 
 ## Rationale {-}
 
-Rationale for sampling is to inform fish presence/absence, species composition/density, abundance estimates,  movement, growth, and survival as part of habitat confirmations and effectiveness monitoring related to fish passage restoration at barrier culverts.  Habitat confirmation methodology information can be referenced in the above reports which builds on the [Fish Passage Technical Working Group Phase 2 protocol](https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/land-based-investment/investment-categories/fish-passage). Presence/absence of fish, species composition/abundance, distribution limits and fish movement can be useful for prioritizing which crossings are a best fit for fish passage restoration and inform follow up effectiveness monitoring.  
+Rationale for sampling is to inform fish presence/absence, species composition/density, abundance estimates,  movement, growth, and survival as part of habitat confirmations and effectiveness monitoring related to fish passage restoration at barrier culverts.  Habitat confirmation methodology information can be referenced in the above reports which builds on the [Fish Passage Technical Working Group Phase 2 protocol](https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/land-based-investment/investment-categories/fish-passage). Presence/absence of fish, species composition/abundance, distribution limits and fish movement can be useful for prioritizing which crossings are a best fit for fish passage restoration and inform baseline as well as follow up effectiveness monitoring.  
 
 <br>
 
 ## Methodologies {-}
 
-Sampling is proposed at streams included in Tables \@ref(tab:tab-sites1) - \@ref(tab:tab-sites3) where we will be performing habitat confirmations and follow up site visits related to past habitat confirmations/fish passage remediations.  
+
+Sampling methodologies will be dependent on the site, fish species suspected, type of habitat encountered, risks to aquatic organisms potentially present (Table \@ref(tab:tab-mitigation)) and ongoing communications.  Sampling methods may include minnowtrapping, electrofishing, and dipnetting upstream and downstream of current and past barrier culvert locations. 
 
 <br>
 
-
-Sampling methodologies will be dependent on the site, fish species suspected, type of habitat encountered, risks to aquatic organisms potentially present and ongoing communications.  Sampling methods may include minnowtrapping, electrofishing, and dipnetting upstream and downstream of current and past barrier culvert locations. 
+Sampling is proposed at streams included in Tables \@ref(tab:tab-sites1) - \@ref(tab:tab-sites3) where we will be performing habitat confirmations and follow up site visits related to past habitat confirmations/fish passage remediations.  
 
 ### PIT Tagging {-}
 
-As part of this permit application we are proposing tagging.  Our study plan is (when time allows and PIT tagging is expected to increase our state of knowledge about the subject system) to electrofish small sites both upstream and downstream of priority culvert "barrier" sites and insert biomark APT12 PIT tags into the body cavity of select fish captured over 60mm.  Fish location (UTM), length and weight will also be collected.  In addition to providing information on abundance upstream and downstream of potential culvert restoration sites, the study will also provide information for monitoring programs to document fish movement, growth and survival at sites over multi-year timeframes. Main objectives are to determine
+As part of this permit application we are proposing tagging for provincial jurisdiction species only.  PIT tagging is not 
+proposed for salmon species. Our study plan is (when time allows and PIT tagging is expected to increase our state of knowledge about the subject system) to electrofish small sites both upstream and downstream of priority culvert "barrier" sites and insert biomark APT12 PIT tags into the body cavity of select fish captured over 60mm.  Fish location (UTM), length and weight will also be collected.  In addition to providing information on abundance upstream and downstream of potential culvert restoration sites, the study will also provide information for monitoring programs to document fish movement, growth and survival at sites over multi-year timeframes. Main objectives are to determine
 
 1. if fish are moving into restored areas 
 2. if before any remediation is conducted - fish are moving through sites where stream crossing structures (culverts) likely cause connectivity issues  
@@ -115,23 +124,20 @@ As part of this permit application we are proposing tagging.  Our study plan is 
 
 <br>
 
-As we wish to tag all fish over 60mm in each site sampled we would like to apply for a permit allowing a maximum of 600 fish with a maximum of 150 fish/stream.  Although we are requesting a maximum of 150 fish/stream, we have listed 150 fish of each species per stream because we will not know the species composition of the sites until the sampling occurs.
+As we wish to tag all fish over 60mm in each site sampled we would like to apply for a permit allowing a maximum of 600 fish with a maximum of 150 fish/stream.  Although we are requesting a maximum of 150 fish/stream, we have listed 150 fish of each species per stream because we will not know the species composition of the sites until the sampling occurs. In general, only salmonid and burbot species will be tagged with likely species present being `r knitr::combine_words(fish_tags)`. Based on past assessments in
+the same and similiar systems in the region, the number of fish tagged per stream are very likely to be much less than 150 however we are requesting the maximum number of fish to be tagged to facilitate permit application procedures and allow for flexibility in the field based on actual sampling results.
 
-<br>
-
-In general, species likely to be tagged include rainbow trout, bull trout, and burbot. The numbers of fish per stream are likely to be much less than 150 however we are requesting the maximum number of fish to be tagged to allow for flexibility in the field. In 2023 the maximum number of fish tagged at one site was less than 100. 
-
-<!-- In 2023 max was 23 fish caught at one site -->
 
 ## Risks associated with project/activities and associated mitigation {-}
 
-```{r}
+```{r tab-mitigation}
 impacts_mitigation <- tribble(
   ~Impact, ~Mitigation,
   "High Voltage Injuries", "Use the minimum effective voltage.  Avoid contacting fish with the anode.  Avoid electrofishing directly adjacent to metal culverts.",
   "Disruption of Spawning", "Avoid electrofishing during highest risk periods in likely spawning habitat.",
   "Physical Stress on Fish", "Quick/gentle handling and release of captured fish.",
-  "Injury from PIT Tagging Surgeries", "Shallow insertion of tags and use of fresh sterile syringes every approximately 10 surgeries"
+  "Injury from PIT Tagging Surgeries", "Shallow insertion of tags and use of fresh sterile syringes every approximately 10 surgeries",
+  "Mortality in traps due to predation and starvation", "Ensure all traps set are retrieved within 24 hours."
 )
 
 fpr::fpr_kable(impacts_mitigation, caption_text = 'Risks and mitigation', scroll = FALSE)
@@ -140,7 +146,7 @@ fpr::fpr_kable(impacts_mitigation, caption_text = 'Risks and mitigation', scroll
 <br>
 
 
-Please note that the sampling will be completed before October 31 (end of August till mid-September however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced in reports above.
+Please note that the sampling will be completed before October 31 (end of August till early October) however the end-date of the sampling period is listed as Dec 31 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible when submitted. An example of how we have been presenting results and methodologies from past assessments can be referenced in reports above.
 
 <br>
 
@@ -155,6 +161,8 @@ Al Irvine, R.P.Bio
 conn <- fpr::fpr_db_conn()
 
 ##pull out what we need from the database
+## in the future we can add these hashed notes to a tribble so that we can include that detail in the memo tables. Will
+# be helpful for regulators as well as field crews.
 
 ids <- c(
   # Thompson Creek
@@ -184,7 +192,9 @@ ids <- c(
 # trib to Stock taht drains Barrett Lake
   195934,
 #Kathlyn Creek
-  58242
+  58242,
+#tirb to coal creek
+  8525
   )
 
 # grab the crossings data 
@@ -227,11 +237,10 @@ wscodes <- fpr::fpr_db_query(
 )
 
 
-# Sites 198217 and 198216 are missing wsc_code due to mapping issue documented here https://github.com/NewGraphEnvironment/fish_passage_skeena_2024_permit/issues/2
 
-# We will use the watershed code from the upstream channel line from 1:50,000.
-wscodes <- wscodes |>
-  dplyr::mutate(wsc_code = case_when(stream_crossing_id == 198217 ~ '400-448500-00000-00000-0000-0000-000-000-000-000-000-000',  T ~ wsc_code))
+
+```
+```{r table-build}
 
 
 # make a table with the watershed codes, stream name, fish species
@@ -250,11 +259,17 @@ table_sites <- left_join(
          pscis_assessment_comment,
          gnis_stream_name, 
          stream_name = pscis_stream_name, 
-         observedspp_upstr),
+         observedspp_upstr) |> 
+    # mutate to allow logical sort. won't work if we had a dam in here
+    dplyr::mutate(id = as.integer(id)),
 
   wscodes |> 
     select(id = stream_crossing_id, wsc_code) |> 
-    dplyr::mutate(id = as.character(id)),
+    
+    dplyr::mutate(
+                  # Sites 198217 and 198216 are missing wsc_code due to mapping issue documented here https://github.com/NewGraphEnvironment/fish_passage_skeena_2024_permit/issues/2
+# We will use the watershed code from the upstream channel line from 1:50,000.
+                  wsc_code = case_when(id == 198217 ~ '400-448500-00000-00000-0000-0000-000-000-000-000-000-000',  T ~ wsc_code)),
 
   by = 'id'
 ) |>  
@@ -262,13 +277,54 @@ table_sites <- left_join(
   mutate(stream_name = case_when(
     is.na(stream_name) ~ gnis_stream_name,
     T ~ stream_name
-  )) |> 
+  ),
+  #this one is incorrect in the database
+  stream_name = case_when(id == 8547 ~ "tributary to McDonell Lake",
+                           id == 8525 ~ "tributary to Coal Creek",
+                          T ~ stream_name)) |> 
   select(-gnis_stream_name) |> 
   sf::st_transform(crs = 4326) |> 
   fpr::fpr_sp_assign_latlong(col_lon = "long") |> 
   arrange(id)
+```
+
+
+```{r print-table-console, eval=FALSE}
+
+# here we prodice a minimal table to copy paste in the DFO pdf
+formatted_output <- table_sites |> 
+  sf::st_drop_geometry() |> 
+  select(id, stream_name, wsc_code) |> 
+  mutate(
+    max_id_width = max(nchar(id)),
+    max_name_width = max(nchar(stream_name))
+  ) |> 
+  mutate(
+    id = str_pad(id, max_id_width, side = "right"),
+    stream_name = str_pad(stream_name, max_name_width, side = "right")
+  ) %>%  # Use old pipe here
+  select(-max_id_width, -max_name_width) %>%  # Drop the max_* columns
+  {
+    # Apply the same padding to the column headers
+    headers <- c(
+      str_pad("id", max(nchar(.$id)), side = "right"),
+      str_pad("stream_name", max(nchar(.$stream_name)), side = "right"),
+      "wsc_code"  # Assuming wsc_code doesn't need padding, otherwise calculate it similarly
+    )
+    
+    # Combine the header and the data
+    headers <- paste(headers, collapse = "\t")
+    formatted_rows <- pmap_chr(., ~ paste(..., collapse = "\t"))
+    
+    paste(c(headers, formatted_rows), collapse = "\n")
+  }
+
+# Print the formatted table with aligned headers using cat
+cat(formatted_output)
+
 
 ```
+
 
 ```{r gpx}
 
