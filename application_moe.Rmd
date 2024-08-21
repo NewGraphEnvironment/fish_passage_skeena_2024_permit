@@ -483,7 +483,7 @@ tab_fish <- readr::read_csv('fig/fiss_species_table.csv')
 tab_fish |> 
   # remove KLUM
   dplyr::select(-Kalum) |>
-  fpr::fpr_kable(caption_text = 'Fish species recorded within subject streams in the Fisheries Information Summary System.', scroll = FALSE, font_size = 8)
+  fpr::fpr_kable(caption_text = 'Fish species recorded in the Fisheries Information Summary System within the  freshwater atlas watershed group areas', scroll = FALSE, font_size = 8)
 
 
 ```
